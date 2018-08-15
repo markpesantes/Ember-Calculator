@@ -1,0 +1,9 @@
+<h2>Select a theme</h2>
+
+
+{{#each model.data as |theme|}}
+    <h3>{{ theme.attributes.name }}</h3>
+    <button {{ action "select-theme" theme.attributes.class-name}}>Select Theme</button>
+{{/each}}
+
+{{outlet}}
