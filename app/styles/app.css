@@ -29,9 +29,17 @@
 .gridCalcCol:hover {
     background-color: #3a3b3c;
 }
+.gridCalc--pressed {
+	background-color: #3a3b3c;
+}
+
 
 .gridCalcLarge {
 	grid-column: 1 / span 3;
+}
+
+.gridCalcMedium {
+	grid-column: 1 / span 2;
 }
 
 .buttonBlue {
