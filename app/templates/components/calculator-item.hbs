@@ -3,21 +3,21 @@
 		{{output}}
 	</div>
 	
-	<div class="gridCalcBody gridCalcBody-theme-{{currentTheme.name}}">
-		<button {{action "input" "C"}} class="buttonBlue gridCalcLarge gridCalcCol" type="button">C</button>
-		<button {{action "input" "/"}} class="gridCalcCol" type="button">&divide;</button>
+	<div class="gridCalcBody">
+		<button {{action "input" "C"}} class="buttonBlue gridCalcLarge gridCalcCol gridCalcCol-operator" type="button">C</button>
+		<button {{action "input" "/"}} class="gridCalcCol gridCalcCol-operator" type="button">&divide;</button>
 		<button {{action "input" 7}} class="gridCalcCol" type="button">7</button>
 		<button {{action "input" 8}} class="gridCalcCol" type="button">8</button>
 		<button {{action "input" 9}} class="gridCalcCol" type="button">9</button>
-		<button {{action "input" "x"}} class="gridCalcCol" type="button">x</button>
+		<button {{action "input" "x"}} class="gridCalcCol gridCalcCol-operator" type="button">x</button>
 		<button {{action "input" 4}} class="gridCalcCol" type="button">4</button>
 		<button {{action "input" 5}} class="gridCalcCol" type="button">5</button>
 		<button {{action "input" 6}} class="gridCalcCol" type="button">6</button>
-		<button {{action "input" "-"}} class="gridCalcCol" type="button">-</button>
+		<button {{action "input" "-"}} class="gridCalcCol gridCalcCol-operator" type="button">-</button>
 		<button {{action "input" 1}} class="gridCalcCol" type="button">1</button>
 		<button {{action "input" 2}} class="gridCalcCol" type="button">2</button>
 		<button {{action "input" 3}} class="gridCalcCol" type="button">3</button>
-		<button {{action "input" "+"}} class="gridCalcCol {{if isPressed 'gridCalc--pressed'}}" type="button">+</button>
+		<button {{action "input" "+"}} class="gridCalcCol gridCalcCol-operator" type="button">+</button>
 		<button {{action "input" 0}} class="gridCalcMedium gridCalcCol" type="button">0</button>
 		<button {{action "input" "."}} class="gridCalcCol" type="button">.</button>
 		<button {{action "input" "="}} class="buttonGreen gridCalcCol" type="button">=</button>

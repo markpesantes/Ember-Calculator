@@ -2,16 +2,23 @@ import Component from '@ember/component';
 
 const calculate = (n1, operator, n2) => {
     let result = ''
-  
-    if (operator === '+') {
-      result = n1 + n2;
-    } else if (operator === '-') {
-      result = n1 - n2;
-    } else if (operator === 'x') {
-      result = n1 * n2;
-    } else if (operator === '/') {
-      result = n1 / n2;
-    }
+
+    switch(operator) {
+        case "+":
+            result = n1 + n2;
+            break;
+        case "-":
+            result = n1 - n2;
+            break;
+        case "*":
+            result = n1 * n2;
+            break;
+        case "/":
+            result = n1 / n2;
+            break;
+        default:
+            break;
+    } 
   
     return result
 };
@@ -55,10 +62,11 @@ export default Component.extend({
                     this.set('data-storedValue', firstValue);
                 }
                 
-                // If we have a number
+            // If we have a number
             } else {
                 if (this.get('data-operator') != '.') {
                     if (display === "0"  || this.get('data-operator') != '') {
+                        
                         display = "";
                         // Need to clear the operator so that we can enter more than 1 number after operator
                         this.set('data-operator', "");
@@ -74,10 +82,7 @@ export default Component.extend({
                 display = String(display) + String(value);
             }
 
-
             this.set('output', display);
-        
-
             
       }
     }

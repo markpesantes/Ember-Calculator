@@ -1,9 +1,13 @@
-<h1>
-    {{#link-to "calculator" class="button"}}Ember Calculator - Theme{{/link-to}}
-</h1>
+<div id="gridCalcThemeRoot" class="">
 
-{{#link-to "themes" class="button"}}Select Theme{{/link-to}}
+    <div class="gridCalc-text_header">
+        <h1>
+            {{#link-to "calculator" class="gridCalc-text_title" id="theme_header"}}Ember Calculator - Default Theme {{/link-to}}
+            
+        </h1>
 
+        {{#link-to "themes" class="gridCalc-theme_select"}}Select Theme{{/link-to}}
+    </div>
 
-
-{{outlet}}
+    {{outlet}}
+</div>

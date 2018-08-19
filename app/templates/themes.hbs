@@ -1,9 +1,18 @@
-<h2>Select a theme</h2>
+<div class="gridCalc-theme_wrapper">
+    <h2>Select a theme</h2>
 
+    <div class="gridCalc-theme_item">
+        <h3>Default</h3>
+        <button {{ action "defaultTheme" }}>Activate Theme</button>
+    </div>
 
-{{#each model.data as |theme|}}
-    <h3>{{ theme.attributes.name }}</h3>
-    <button {{ action "select-theme" theme.attributes.class-name}}>Select Theme</button>
-{{/each}}
+    {{#each model as |theme|}}
+        <div class="gridCalc-theme_item">
+            <h3>{{ theme.name }}</h3>
+            <button {{ action "setTheme" theme}}>Activate Theme</button>
+        </div>
+    {{/each}}
+
+</div>
 
 {{outlet}}
