@@ -1,7 +1,6 @@
 # calculator
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A calculator built upon the Ember framework. The default index will reroute to the calculator directory, and there is a /themes page that allows the user to select their preferred theme (data provided via a 3rd party API). 
 
 ## Prerequisites
 
@@ -14,7 +13,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/markpesantes/Ember-Calculator.git` this repository
 * `cd calculator`
 * `npm install`
 
@@ -43,14 +42,14 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## Documentation used / Useful Links
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
+* [Ember Routes/Redirection](https://guides.emberjs.com/release/routing/defining-your-routes/)
+* [Ember Components](https://guides.emberjs.com/release/tutorial/simple-component/)
+* [Ember Data](https://guides.emberjs.com/release/tutorial/ember-data/)
+* [Customizing Adapters](https://guides.emberjs.com/release/models/customizing-adapters/)
+* [Using Mirage for API testing](https://guides.emberjs.com/release/tutorial/installing-addons/)
+* [Deactive Mirage & Use API](https://stackoverflow.com/questions/38702136/remove-ember-cli-mirage-from-ember)
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)

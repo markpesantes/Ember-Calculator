@@ -69,6 +69,7 @@ export default Component.extend({
                     }
                 }
 
+                // If an equal is entered we need to clear operator references 
                 if (this.get('data-operator') == '=') {
                     display = "";
                     this.set('data-operator', "");
