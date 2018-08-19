@@ -47,6 +47,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/calculator/';
     // here you can enable a production-specific feature
     ENV['ember-cli-mirage'] = {
       enabled: false
