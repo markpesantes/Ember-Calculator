@@ -51,6 +51,16 @@
 	cursor: pointer;
 }
 
+.gridCalc-theme_button {
+	
+	padding: 15px 20px;
+	border: 0;
+	background: #4CAF50;
+	color: white;
+	border-radius: 5px;
+}
+
+
 .gridCalcCol-operator {
 	background-color: orange;
 	color: black;

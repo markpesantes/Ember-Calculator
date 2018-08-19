@@ -3,29 +3,23 @@ import Component from '@ember/component';
 const calculate = (n1, operator, n2) => {
     let result = ''
 
-    switch(operator) {
-        case "+":
-            result = n1 + n2;
-            break;
-        case "-":
-            result = n1 - n2;
-            break;
-        case "*":
-            result = n1 * n2;
-            break;
-        case "/":
-            result = n1 / n2;
-            break;
-        default:
-            break;
-    } 
+    if (operator === '+') {
+        result = n1 + n2;
+      } else if (operator === '-') {
+        result = n1 - n2;
+      } else if (operator === 'x') {
+        result = n1 * n2;
+      } else if (operator === '/') {
+        result = n1 / n2;
+      }
+    
   
     return result
 };
 
 export default Component.extend({
     output: "0",
-    actions: {
+    actions: { 
         input(value) {
             let display = this.get('output');
             let key = value;
@@ -60,6 +54,8 @@ export default Component.extend({
                 } else {
                     this.set('data-operator', operator);
                     this.set('data-storedValue', firstValue);
+                    display = "";
+                    display = display + value;
                 }
                 
             // If we have a number

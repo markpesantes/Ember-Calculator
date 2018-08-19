@@ -3,13 +3,13 @@
 
     <div class="gridCalc-theme_item">
         <h3>Default</h3>
-        <button {{ action "defaultTheme" }}>Activate Theme</button>
+        <button {{ action "defaultTheme" }} class="gridCalc-theme_button">Activate Theme</button>
     </div>
 
     {{#each model as |theme|}}
         <div class="gridCalc-theme_item">
             <h3>{{ theme.name }}</h3>
-            <button {{ action "setTheme" theme}}>Activate Theme</button>
+            <button {{ action "setTheme" theme}} class="gridCalc-theme_button">Activate Theme</button>
         </div>
     {{/each}}
 
