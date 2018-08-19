@@ -2,7 +2,7 @@
 
 A calculator built upon the Ember framework. The default index will reroute to the calculator directory, and there is a /themes page that allows the user to select their preferred theme (data provided via a 3rd party API). 
 
-* [Demo](markpesantes.com/Ember-Calculator)
+* [Demo](https://markpesantes.com/Ember-Calculator)
 
 * [Documentation Used](https://github.com/markpesantes/Ember-Calculator#documentation-used--useful-links)
 
