@@ -51,7 +51,7 @@ export default Component.extend({
                     this.set('data-operator', "");
                     this.set('data-prevOperator', "");
                     display = "0";
-                } else {
+                } else if (key != ".") {
                     this.set('data-operator', operator);
                     this.set('data-storedValue', firstValue);
                     display = "";
